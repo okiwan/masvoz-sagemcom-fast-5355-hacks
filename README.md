@@ -211,3 +211,11 @@ $('#dhcpForm').scope().dhcpForm.$invalid=false
 - [SAGEMCOM-FAST-5370e-TELIA](https://github.com/wuseman/SAGEMCOM-FAST-5370e-TELIA) Gran investigación sobre otro router no del todo aplicatible ya que en España el firmware ha cambiado, se ha actualizado y se ha personalizado. Pero es tan tan parecido que incluso en el firmware hay ficheros que hablan de felia y townki.
 
 - [Foro Banda Ancha sobre MasMovil](https://bandaancha.eu/foros/extraer-gpon-router-sagemcom-fast-5655v2-1731346) Aqui realmente empecé a ver que decian los usuarios ya que mi idea era poner mi propio router en el domicilio y la imposibilidad o impasividad del servicio tecnico de MasVoz te de lo ayudee en lo necesario para configurar otro router o acceder a una configuración mas avanzada del mismo.
+
+## Notas adicionales
+
+- VLAN 20 is used for data. We may use our router in bridge mode (just as an ONT) but we may loose VoIP and we will need to connect a router that supports VLAN 20 for the rest.
+
+- Another possibility would be to connect to the router (via SSH) and obtain the GPON (Gigabyte passive optimal network) login information so that we can buy our own ONT.
+
+- Although it has nothing to do with the previous comments, I understand that we currently are outside the CGNAT (Carriter-grade NAT), which makes us completely opened for everyone to access our ports.
